@@ -1,0 +1,20 @@
+body {
+    font-family:'Titillium Web', sans-serif;
+}
+.card-img-top{
+    align-self: center;
+    margin-top:4vh;
+    height: 30%;
+    width: 50%;
+}
+#searchBar{
+  width: 25%;
+}
+body::-webkit-scrollbar {
+    width: 0.35vw;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: rgb(192, 42, 42);
+    border-radius: 0.5vw;
+  }
