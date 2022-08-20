@@ -1,14 +1,25 @@
 body {
     font-family:'Titillium Web', sans-serif;
 }
+.card{
+  background-color: rgb(225, 225, 225);
+  transparency: transparent;
+}
 .card-img-top{
     align-self: center;
     margin-top:4vh;
     height: 30%;
     width: 50%;
 }
+.border-top{
+  margin-top: 5%;
+}
 #searchBar{
   width: 25%;
+}
+.al{
+  display: flex;
+  justify-content: center;
 }
 body::-webkit-scrollbar {
     width: 0.35vw;
