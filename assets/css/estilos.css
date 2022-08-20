@@ -4,6 +4,8 @@ body {
 .card{
   background-color: rgb(225, 225, 225);
   transparency: transparent;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 .card-img-top{
     align-self: center;
@@ -12,7 +14,7 @@ body {
     width: 50%;
 }
 .border-top{
-  margin-top: 5%;
+  margin-top: 1%;
 }
 #searchBar{
   width: 25%;
