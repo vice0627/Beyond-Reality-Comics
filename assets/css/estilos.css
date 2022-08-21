@@ -1,11 +1,17 @@
 body {
     font-family:'Titillium Web', sans-serif;
+    background-color: #191919;
+    color: white;
 }
 .card{
-  background-color: rgb(225, 225, 225);
-  transparency: transparent;
   margin-top: 5%;
   margin-bottom: 5%;
+  color: white;
+  background-color: rgb(17, 17, 17);
+}
+.bg-black{
+  background-color: #191919;
+
 }
 .card-img-top{
     align-self: center;
@@ -17,17 +23,21 @@ body {
   margin-top: 1%;
 }
 #searchBar{
-  width: 25%;
+  max-width: none;
+  min-width: 25%;
 }
 .al{
   display: flex;
   justify-content: center;
+}
+.tx{
+  color: white;
 }
 body::-webkit-scrollbar {
     width: 0.35vw;
   }
   
   body::-webkit-scrollbar-thumb {
-    background: rgb(192, 42, 42);
+    background: rgb(8, 93, 47);
     border-radius: 0.5vw;
   }

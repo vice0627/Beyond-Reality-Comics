@@ -20,9 +20,10 @@
 
 <body>
     <header class="mb-0">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black" style="background-color: rgb(22, 22, 22);">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">Beyond Reality Comics</a>
+                <img style="height: 2rem;margin-right: 0.5rem;" src="assets/img/bLogo.png" alt="Logo Beyond Reality Comics">
+                <a class="navbar-brand" href="index.html">Beyond Reality Comics</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -36,30 +37,25 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="assets/pages/librosYRevistas.html">Libros y Revistas</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="assets/pages/tarifas.html" id="navbarDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Tarifas
-                            </a>
-                            <ul class="dropdown-menu active" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="assets/pages/tBasica.html">Básica</a></li>
-                                <li><a class="dropdown-item" href="assets/pages/tMedia.html">Media</a></li>
-                                <li><a class="dropdown-item" href="assets/pages/tPremium.html">Premium</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="assets/pages/tarifas.html">Tarifas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="carrito.html">carrito</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="assets/pages/contacto.html">contacto</a>
                         </li>
                     </ul>
                     <form class="d-flex" id="searchBar">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-danger" type="submit">Buscar</button>
+                        <input class="form-control me-2 outline-danger" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
-    <main>
+    <main class="bg-dark">
         <section class="mb-5">
             <div class="px-0 container-fluid">
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -89,7 +85,7 @@
                         <div class="carousel-item">
                             <img src="assets/img/ofertas.jpg" class="d-block w-100" alt="Logo de marvel">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Ofertas por Black Friday</h5>
+                                <h5">Ofertas por Black Friday</h5>
                                 <p>50% de descuento en productos de todo tipo, en Beyond Reality Comics todos los
                                     viernes son Black Friday</p>
                             </div>
@@ -111,7 +107,7 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <h4>Primeras Ediciones - Marvel</h4>
+                    <h4 >Primeras Ediciones - Marvel</h4>
                     <div class="col-lg-3 col-md-6">
                         <div class="card">
                             <img class="card-img-top" src="assets/img/primeraEdicionDaredevil.jfif"
@@ -239,7 +235,7 @@
                 <div class="row">
                     <h4>Otros</h4>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card">
+                        <div class="card" style="background-color: rgb(17, 17, 17);">
                             <img class="card-img-top" src="assets/img/primeraEdicionSpawn.jpg"
                                 alt="Primera Edicion Spawn">
                             <div class="card-body">
@@ -299,65 +295,61 @@
                 </div>
             </div>
         </section>
-        </footer>
-        <section>
-            <div class="border-top">
-                <div class="container text-center text-md-start mt-5">
-                    <div class="row mt-3">
-                        <div class="col-sm-12 col-lg-5 text-lg-start text-md-center mb-5">
-                            <h6 class="text-uppercase fw-bold mb-4">
-                                Beyond Reality Comics
-                            </h6>
-                            <p>
-                                Desde 1995, una empresa familiar con trayectoria. De Rosario para toda la región.
-                                Barraca Rodríguez es sinónimo de calidad.
-                            </p>
-                            <div class="mt-6 ms-sm-auto">
-                                <a href="http://facebook.com" class="btn btn-dark btn-md me-1 ps-3"
-                                    aria-label="Facebook" target="_blank">
-                                    <i class="fab fa-facebook-f">&nbsp;</i>
-                                </a>
-                                <a href="http://instagram.com" class="btn btn-dark btn-md me-1 ps-3"
-                                    aria-label="Instagram" target="_blank">
-                                    <i class="fab fa-instagram">&nbsp;</i>
-                                </a>
-                                <a href="http://twitter.com" class="btn btn-dark btn-md me-1 ps-3" aria-label="twitter"
-                                    target="_blank">
-                                    <i class="fab fa-twitter">&nbsp;</i>
-                                </a>
-                                <a href="http://linkedin.com" class="btn btn-dark btn-md me-1 ps-3"
-                                    aria-label="linkedin" target="_blank">
-                                    <i class="fab fa-linkedin">&nbsp;</i>
-                                </a>
-                            </div>
+    </footer>
+    <section>
+        <div class="border-top" style="background-color: rgb(20, 20, 20);">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-sm-12 col-lg-5 text-lg-start text-md-center mb-5">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Beyond Reality Comics
+                        </h6>
+                        <div class="mt-6 ms-sm-auto">
+                            <a href="http://facebook.com" class="btn btn-dark btn-md me-1 ps-3"
+                                aria-label="Facebook" target="_blank">
+                                <i class="fab fa-facebook-f">&nbsp;</i>
+                            </a>
+                            <a href="http://instagram.com" class="btn btn-dark btn-md me-1 ps-3"
+                                aria-label="Instagram" target="_blank">
+                                <i class="fab fa-instagram">&nbsp;</i>
+                            </a>
+                            <a href="http://twitter.com" class="btn btn-dark btn-md me-1 ps-3" aria-label="twitter"
+                                target="_blank">
+                                <i class="fab fa-twitter">&nbsp;</i>
+                            </a>
+                            <a href="http://linkedin.com" class="btn btn-dark btn-md me-1 ps-3"
+                                aria-label="linkedin" target="_blank">
+                                <i class="fab fa-linkedin">&nbsp;</i>
+                            </a>
                         </div>
-                        <div class="col-md-12 col-lg-4 mx-auto text-lg-start text-md-center mb-4">
-                            <h6 class="text-uppercase fw-bold mb-4 mb-md-4">Informacion de Contacto</h6>
-                            <p>
-                                <i class="fas fa-home me-3 text-grayish">&nbsp;</i>
-                                Gral.Flores, Colonia del Sacramento, Uruguay
-                            </p>
-                            <p>
-                                <i class="fas fa-envelope me-3 text-grayish">&nbsp;</i>
-                                soluciones@B.R.C.com
-                            </p>
-                            <p>
-                                <i class="fas fa-phone me-3 text-grayish">&nbsp;</i>
-                                (+598) 95 362 051
-                            </p>
-                            <p>
-                                <i class="fas fa-fax me-3 text-grayish">&nbsp;</i>
-                                4522 7795
-                            </p>
-                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4 mx-auto text-lg-start text-md-center mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4 mb-md-4">Informacion de Contacto</h6>
+                        <p>
+                            <i class="fas fa-home me-3 text-grayish">&nbsp;</i>
+                            Gral.Flores, Colonia del Sacramento, Uruguay
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope me-3 text-grayish">&nbsp;</i>
+                            soluciones@B.R.C.com
+                        </p>
+                        <p>
+                            <i class="fas fa-phone me-3 text-grayish">&nbsp;</i>
+                            (+598) 95 362 051
+                        </p>
+                        <p>
+                            <i class="fas fa-fax me-3 text-grayish">&nbsp;</i>
+                            4522 7795
+                        </p>
                     </div>
                 </div>
             </div>
-        </section>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/35e140fb72.js" crossorigin="anonymous"></script>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/35e140fb72.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
