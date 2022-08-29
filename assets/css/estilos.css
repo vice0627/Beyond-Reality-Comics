@@ -26,6 +26,10 @@ body {
   max-width: none;
   min-width: 25%;
 }
+#searchBarIndex{
+  max-width: none;
+  min-width: 30%;
+}
 .al{
   display: flex;
   justify-content: center;
