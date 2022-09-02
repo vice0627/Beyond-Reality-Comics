@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -33,9 +33,6 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="comics.html">Comics</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link active" href="librosYRevistas.html">Libros y Revistas</a>
                         </li>
                         <li class="nav-item">
@@ -50,9 +47,13 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="contacto.html">contacto</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="otros.html">Otros</a>
+                        </li>
                     </ul>
                     <form class="d-flex" id="searchBar">
-                        <a href="carrito.html" class="btn btn-dark btn-md me-1 ps-3" aria-label="carrito">
+                        <a href="carrito.html"
+                         class="btn btn-dark btn-md me-1 ps-3" aria-label="Boton de acceso al carrito de compras">
                             <svg xmlns="http://www.w3.org/2000/svg" width="1.25rem" height="2rem" fill="currentColor"
                                 class="bi bi-cart" viewBox="0 0 16 16">
                                 <path
@@ -81,8 +82,49 @@
                                     <spam class="badge bg-success"> Oferta </spam>
                                     Una figura increiblemente detallada de RedHood, con articulaciones para cambiar su pose. Un favorito de la casa.
                                 </p>
-                                <spam class="fw-bold">USD $199</spam>
-                                <a href="#" class="btn btn-dark ms-3">Ver Mas</a>
+                                <spam class="fw-bold">USD 199</spam>
+                                <button href="#" class="btn btn-dark ms-3" data-bs-target="#red-hood-modal"
+                                    data-bs-toggle="modal">Ver Mas</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="red-hood-modal" tabindex="-1" aria-labelledby="modal-title"
+                        aria-hidden="true">
+                        <div class="modal-dialog bg-login">
+                            <div class="modal-content bg-login" style="margin-top:30%;height:120%;">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="padding-left: 20%;padding-right: 20%;">
+                                    <br>
+                                    <h5 class="al tx">RedHood</h5>
+                                    <img style="margin-left: 25%;margin-right: 25%;" class="card-img-top"
+                                    src="../img/RedHood.jpg"
+                                    alt="AntiHeroe Capucha Roja">
+                                    <br>
+                                    <br>
+                                    <p class="tx text-center">Una figura increiblemente detallada de RedHood, con articulaciones para cambiar su pose. Un favorito de la casa.</p>
+                                    <br>
+                                    <p class="al tx">USD 199</p>
+                                    <br>
+                                </div>
+                                <div class="modal-footer al">
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-primary"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> Agregar al Carrito
+                                    </button>
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-light"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z" />
+                                        </svg> Lista de deseos
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -96,8 +138,49 @@
                                     <spam class="badge bg-success"> Oferta </spam>
                                     El gigante de Marvel ahora en una figura super detallada, con articulaciones en todo el cuerpo para facilitar el cambio de postura. Una pieza imperdible de cualquier fanatico.
                                 </p>
-                                <spam class="fw-bold">USD $299</spam>
-                                <a href="#" class="btn btn-dark ms-3">Ver Mas</a>
+                                <spam class="fw-bold">USD 299</spam>
+                                <button href="#" class="btn btn-dark ms-3" data-bs-target="#hulk-modal"
+                                    data-bs-toggle="modal">Ver Mas</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="hulk-modal" tabindex="-1" aria-labelledby="modal-title"
+                        aria-hidden="true">
+                        <div class="modal-dialog bg-login">
+                            <div class="modal-content bg-login" style="margin-top:30%;height:120%;">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="padding-left: 20%;padding-right: 20%;">
+                                    <br>
+                                    <h5 class="al tx">Hulk</h5>
+                                    <img style="margin-left: 25%;margin-right: 25%;" class="card-img-top"
+                                    src="../img/Hulkfigura.jfif"
+                                    alt="Figura del Heroe de Marvel Hulk">
+                                    <br>
+                                    <br>
+                                    <p class="tx text-center">El gigante de Marvel ahora en una figura super detallada, con articulaciones en todo el cuerpo para facilitar el cambio de postura. Una pieza imperdible de cualquier fanatico.</p>
+                                    <br>
+                                    <p class="al tx">USD 299</p>
+                                    <br>
+                                </div>
+                                <div class="modal-footer al">
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-primary"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> Agregar al Carrito
+                                    </button>
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-light"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z" />
+                                        </svg> Lista de deseos
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -111,8 +194,49 @@
                                     <spam class="badge bg-success"> Oferta </spam>
                                     Uno de los Heroes mas poderosos de DC, en una figura exclusiva.
                                 </p>
-                                <spam class="fw-bold">USD $99</spam>
-                                <a href="#" class="btn btn-dark ms-3">Ver Mas</a>
+                                <spam class="fw-bold">USD 99</spam>
+                                <button href="#" class="btn btn-dark ms-3" data-bs-target="#superman-modal"
+                                    data-bs-toggle="modal">Ver Mas</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="superman-modal" tabindex="-1" aria-labelledby="modal-title"
+                        aria-hidden="true">
+                        <div class="modal-dialog bg-login">
+                            <div class="modal-content bg-login" style="margin-top:30%;height:120%;">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="padding-left: 20%;padding-right: 20%;">
+                                    <br>
+                                    <h5 class="al tx">Superman</h5>
+                                    <img style="margin-left: 25%;margin-right: 25%;" class="card-img-top"
+                                    src="../img/Supermanfigura.jfif"
+                                    alt="Superman">
+                                    <br>
+                                    <br>
+                                    <p class="tx text-center">Uno de los Heroes mas poderosos de DC, en una figura exclusiva.</p>
+                                    <br>
+                                    <p class="al tx">USD 99</p>
+                                    <br>
+                                </div>
+                                <div class="modal-footer al">
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-primary"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> Agregar al Carrito
+                                    </button>
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-light"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z" />
+                                        </svg> Lista de deseos
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -126,8 +250,49 @@
                                     <spam class="badge bg-success"> Oferta </spam>
                                     Alguna vez Quisiste tener una figura de Flash? Pues ahora puedes con la impresionante replica del personaje de DC.
                                 </p>
-                                <spam class="fw-bold">USD $199</spam>
-                                <a href="#" class="btn btn-dark ms-3">Ver Mas</a>
+                                <spam class="fw-bold">USD 199</spam>
+                                <button href="#" class="btn btn-dark ms-3" data-bs-target="#flash-modal"
+                                    data-bs-toggle="modal">Ver Mas</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="flash-modal" tabindex="-1" aria-labelledby="modal-title"
+                        aria-hidden="true">
+                        <div class="modal-dialog bg-login">
+                            <div class="modal-content bg-login" style="margin-top:30%;height:120%;">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="padding-left: 20%;padding-right: 20%;">
+                                    <br>
+                                    <h5 class="al tx">Muñeco del Flash de Barry</h5>
+                                    <img style="margin-left: 25%;margin-right: 25%;" class="card-img-top"
+                                    src="../img/Flashfigura.jfif"
+                                    alt="Figura de Flash">
+                                    <br>
+                                    <br>
+                                    <p class="tx text-center">Alguna vez Quisiste tener una figura de Flash? Pues ahora puedes con la impresionante replica del personaje de DC.</p>
+                                    <br>
+                                    <p class="al tx">USD 199</p>
+                                    <br>
+                                </div>
+                                <div class="modal-footer al">
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-primary"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> Agregar al Carrito
+                                    </button>
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-light"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z" />
+                                        </svg> Lista de deseos
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -144,8 +309,49 @@
                                     <spam class="badge bg-success"> Nuevo </spam>
                                     Ironman, el legendario Heroe de Marvel tiene una figura impresionante con un efecto metalizado. Una pieza de una calidad indiscutible.
                                 </p>
-                                <spam class="fw-bold">USD $999</spam>
-                                <a href="#" class="btn btn-dark ms-3">Ver Mas</a>
+                                <spam class="fw-bold">USD 999</spam>
+                                <button href="#" class="btn btn-dark ms-3" data-bs-target="#iron-man-modal"
+                                    data-bs-toggle="modal">Ver Mas</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="iron-man-modal" tabindex="-1" aria-labelledby="modal-title"
+                        aria-hidden="true">
+                        <div class="modal-dialog bg-login">
+                            <div class="modal-content bg-login" style="margin-top:30%;height:120%;">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="padding-left: 20%;padding-right: 20%;">
+                                    <br>
+                                    <h5 class="al tx">Iron Man</h5>
+                                    <img style="margin-left: 25%;margin-right: 25%;" class="card-img-top"
+                                    src="../img/Ironmanfigura.jfif"
+                                    alt="Figura del Heroe de Marvel Ironman">
+                                    <br>
+                                    <br>
+                                    <p class="tx text-center">Ironman, el legendario Heroe de Marvel tiene una figura impresionante con un efecto metalizado. Una pieza de una calidad indiscutible.</p>
+                                    <br>
+                                    <p class="al tx">USD 999</p>
+                                    <br>
+                                </div>
+                                <div class="modal-footer al">
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-primary"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> Agregar al Carrito
+                                    </button>
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-light"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z" />
+                                        </svg> Lista de deseos
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -159,8 +365,49 @@
                                     <spam class="badge bg-success"> Nuevo </spam>
                                     El dios del rayo y Heroe Thor tiene una figura espectacular, con unos detalles impactantes y unos materiales como para dejar babeando a cualquier fan.
                                 </p>
-                                <spam class="fw-bold">USD $999</spam>
-                                <a href="#" class="btn btn-dark ms-3">Ver Mas</a>
+                                <spam class="fw-bold">USD 999</spam>
+                                <button href="#" class="btn btn-dark ms-3" data-bs-target="#thor-modal"
+                                    data-bs-toggle="modal">Ver Mas</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="thor-modal" tabindex="-1" aria-labelledby="modal-title"
+                        aria-hidden="true">
+                        <div class="modal-dialog bg-login">
+                            <div class="modal-content bg-login" style="margin-top:30%;height:120%;">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="padding-left: 20%;padding-right: 20%;">
+                                    <br>
+                                    <h5 class="al tx">Thor</h5>
+                                    <img style="margin-left: 25%;margin-right: 25%;" class="card-img-top"
+                                    src="../img/Thorfigura.jfif"
+                                    alt="Una Figura del Heroe de Marvel Thor">
+                                    <br>
+                                    <br>
+                                    <p class="tx text-center">El dios del rayo y Heroe Thor tiene una figura espectacular, con unos detalles impactantes y unos materiales como para dejar babeando a cualquier fan.</p>
+                                    <br>
+                                    <p class="al tx">USD 999</p>
+                                    <br>
+                                </div>
+                                <div class="modal-footer al">
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-primary"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> Agregar al Carrito
+                                    </button>
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-light"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z" />
+                                        </svg> Lista de deseos
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -175,7 +422,48 @@
                                     El villano Loki; Dios del enganio tiene su propia serie, Porque no tendria su propia figura de accion? 
                                 </p>
                                 <spam class="fw-bold">USD $799</spam>
-                                <a href="#" class="btn btn-dark ms-3">Ver Mas</a>
+                                <button href="#" class="btn btn-dark ms-3" data-bs-target="#loki-modal"
+                                    data-bs-toggle="modal">Ver Mas</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="loki-modal" tabindex="-1" aria-labelledby="modal-title"
+                        aria-hidden="true">
+                        <div class="modal-dialog bg-login">
+                            <div class="modal-content bg-login" style="margin-top:30%;height:120%;">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="padding-left: 20%;padding-right: 20%;">
+                                    <br>
+                                    <h5 class="al tx">Loki</h5>
+                                    <img style="margin-left: 25%;margin-right: 25%;" class="card-img-top"
+                                    src="../img/Lokifigura.jfif"
+                                    alt="Una figura del Villano Loki">
+                                    <br>
+                                    <br>
+                                    <p class="tx text-center">El villano Loki; Dios del enganio tiene su propia serie, Porque no tendria su propia figura de accion?</p>
+                                    <br>
+                                    <p class="al tx">USD 250 000</p>
+                                    <br>
+                                </div>
+                                <div class="modal-footer al">
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-primary"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> Agregar al Carrito
+                                    </button>
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-light"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z" />
+                                        </svg> Lista de deseos
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -189,8 +477,49 @@
                                     <spam class="badge bg-success"> Nuevo </spam>
                                     El titan loco Thanos es uno de los ultimos villanos en aparecer en la pantalla grande, por eso merecia tener una figura que honre su aparicion en el UCM.
                                 </p>
-                                <spam class="fw-bold">USD $Corre</spam>
-                                <a href="#" class="btn btn-dark ms-3">Ver Mas</a>
+                                <spam class="fw-bold">USD 159</spam>
+                                <button href="#" class="btn btn-dark ms-3" data-bs-target="#thanos-modal"
+                                    data-bs-toggle="modal">Ver Mas</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="thanos-modal" tabindex="-1" aria-labelledby="modal-title"
+                        aria-hidden="true">
+                        <div class="modal-dialog bg-login">
+                            <div class="modal-content bg-login" style="margin-top:30%;height:120%;">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="padding-left: 20%;padding-right: 20%;">
+                                    <br>
+                                    <h5 class="al tx">Thanos</h5>
+                                    <img style="margin-left: 25%;margin-right: 25%;" class="card-img-top"
+                                    src="../img/Thanosfigura.jfif"
+                                    alt="Una figura del villano Thanos">
+                                    <br>
+                                    <br>
+                                    <p class="tx text-center">El titan loco Thanos es uno de los ultimos villanos en aparecer en la pantalla grande, por eso merecia tener una figura que honre su aparicion en el UCM.</p>
+                                    <br>
+                                    <p class="al tx">USD 159</p>
+                                    <br>
+                                </div>
+                                <div class="modal-footer al">
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-primary"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> Agregar al Carrito
+                                    </button>
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-light"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z" />
+                                        </svg> Lista de deseos
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -207,8 +536,49 @@
                                     <spam class="badge bg-success"> Nuevo </spam>
                                     Una figura de la increible Wonder Woman, quien pertenece a la Liga de la justicia.
                                 </p>
-                                <spam class="fw-bold">USD $99</spam>
-                                <a href="#" class="btn btn-dark ms-3">Ver Mas</a>
+                                <spam class="fw-bold">USD 99</spam>
+                                <button href="#" class="btn btn-dark ms-3" data-bs-target="#wonder-woman-modal"
+                                    data-bs-toggle="modal">Ver Mas</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="wonder-woman-modal" tabindex="-1" aria-labelledby="modal-title"
+                        aria-hidden="true">
+                        <div class="modal-dialog bg-login">
+                            <div class="modal-content bg-login" style="margin-top:30%;height:120%;">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="padding-left: 20%;padding-right: 20%;">
+                                    <br>
+                                    <h5 class="al tx">Wonder Woman</h5>
+                                    <img style="margin-left: 25%;margin-right: 25%;" class="card-img-top"
+                                    src="../img/Wonderfigura.jfif"
+                                    alt="Una figura de Wonder Woman">
+                                    <br>
+                                    <br>
+                                    <p class="tx text-center">Una figura de la increible Wonder Woman, quien pertenece a la Liga de la justicia.</p>
+                                    <br>
+                                    <p class="al tx">USD 99</p>
+                                    <br>
+                                </div>
+                                <div class="modal-footer al">
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-primary"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> Agregar al Carrito
+                                    </button>
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-light"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z" />
+                                        </svg> Lista de deseos
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -222,8 +592,49 @@
                                     <spam class="badge bg-success"> Nuevo </spam>
                                     Una figura de lujo del caballero de la noche, obligatoria para cualquier fan que busque la maxima calidad de su heroe favorito.
                                 </p>
-                                <spam class="fw-bold">USD $1299</spam>
-                                <a href="#" class="btn btn-dark ms-3">Ver Mas</a>
+                                <spam class="fw-bold">USD 1299</spam>
+                                <button href="#" class="btn btn-dark ms-3" data-bs-target="#batman-modal"
+                                    data-bs-toggle="modal">Ver Mas</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="batman-modal" tabindex="-1" aria-labelledby="modal-title"
+                        aria-hidden="true">
+                        <div class="modal-dialog bg-login">
+                            <div class="modal-content bg-login" style="margin-top:30%;height:120%;">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="padding-left: 20%;padding-right: 20%;">
+                                    <br>
+                                    <h5 class="al tx">Batman</h5>
+                                    <img style="margin-left: 25%;margin-right: 25%;" class="card-img-top"
+                                    src="../img/Batmanfigura.jfif" 
+                                    alt="Una figura del Heroe Batman">
+                                    <br>
+                                    <br>
+                                    <p class="tx text-center">Una figura de lujo del caballero de la noche, obligatoria para cualquier fan que busque la maxima calidad de su heroe favorito.</p>
+                                    <br>
+                                    <p class="al tx">USD 1299</p>
+                                    <br>
+                                </div>
+                                <div class="modal-footer al">
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-primary"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> Agregar al Carrito
+                                    </button>
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-light"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z" />
+                                        </svg> Lista de deseos
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -237,8 +648,49 @@
                                     <spam class="badge bg-success"> Nuevo </spam>
                                     Un villano clasico de Superman, ahora en una figura increible, una pieza digna de su costo.
                                 </p>
-                                <spam class="fw-bold">USD $399</spam>
-                                <a href="#" class="btn btn-dark ms-3">Ver Mas</a>
+                                <spam class="fw-bold">USD 399</spam>
+                                <button href="#" class="btn btn-dark ms-3" data-bs-target="#lex-luthor-modal"
+                                    data-bs-toggle="modal">Ver Mas</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="lex-luthor-modal" tabindex="-1" aria-labelledby="modal-title"
+                        aria-hidden="true">
+                        <div class="modal-dialog bg-login">
+                            <div class="modal-content bg-login" style="margin-top:30%;height:120%;">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="padding-left: 20%;padding-right: 20%;">
+                                    <br>
+                                    <h5 class="al tx">Lex Luthor</h5>
+                                    <img style="margin-left: 25%;margin-right: 25%;" class="card-img-top"
+                                    src="../img/Lexfigura.jfif"
+                                    alt="Una figura del Villano de DC Lex Luthor">
+                                    <br>
+                                    <br>
+                                    <p class="tx text-center">Un villano clasico de Superman, ahora en una figura increible, una pieza digna de su costo.</p>
+                                    <br>
+                                    <p class="al tx">USD 399</p>
+                                    <br>
+                                </div>
+                                <div class="modal-footer al">
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-primary"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> Agregar al Carrito
+                                    </button>
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-light"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z" />
+                                        </svg> Lista de deseos
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -252,8 +704,49 @@
                                     <spam class="badge bg-success"> Nuevo </spam>
                                     Una figura del Robin de Damian Wayne, el hijo de Batman.
                                 </p>
-                                <spam class="fw-bold">USD $499</spam>
-                                <a href="#" class="btn btn-dark ms-3">Ver Mas</a>
+                                <spam class="fw-bold">USD 499</spam>
+                                <button href="#" class="btn btn-dark ms-3" data-bs-target="#robin-modal"
+                                    data-bs-toggle="modal">Ver Mas</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="robin-modal" tabindex="-1" aria-labelledby="modal-title"
+                        aria-hidden="true">
+                        <div class="modal-dialog bg-login">
+                            <div class="modal-content bg-login" style="margin-top:30%;height:120%;">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="padding-left: 20%;padding-right: 20%;">
+                                    <br>
+                                    <h5 class="al tx">Robin</h5>
+                                    <img style="margin-left: 25%;margin-right: 25%;" class="card-img-top"
+                                    src="../img/Robinfigura.jfif" 
+                                    alt="Una figura del Robin de Damian Wayne">
+                                    <br>
+                                    <br>
+                                    <p class="tx text-center">Una figura del Robin de Damian Wayne, el hijo de Batman.</p>
+                                    <br>
+                                    <p class="al tx">USD 499</p>
+                                    <br>
+                                </div>
+                                <div class="modal-footer al">
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-primary"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> Agregar al Carrito
+                                    </button>
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-light"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z" />
+                                        </svg> Lista de deseos
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -269,11 +762,52 @@
                                         <spam class="badge bg-success"> Importado </spam>
                                         Una figura del Heroe de nuestra infancia Son Goku. Hecha con unos materiales ideales que aseguran resistencia y a su vez permiten una cantidad de detalles sin igual.
                                     </p>
-                                    <spam class="fw-bold">USD $4999</spam>
-                                    <a href="#" class="btn btn-dark ms-3">Ver Mas</a>
+                                    <spam class="fw-bold">USD 4999</spam>
+                                    <button href="#" class="btn btn-dark ms-3" data-bs-target="#goku-modal"
+                                    data-bs-toggle="modal">Ver Mas</button>
                                 </div>
                             </div>
                         </div>
+                        <div class="modal fade" id="goku-modal" tabindex="-1" aria-labelledby="modal-title"
+                        aria-hidden="true">
+                        <div class="modal-dialog bg-login">
+                            <div class="modal-content bg-login" style="margin-top:30%;height:120%;">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="padding-left: 20%;padding-right: 20%;">
+                                    <br>
+                                    <h5 class="al tx">Goku</h5>
+                                    <img style="margin-left: 25%;margin-right: 25%;" class="card-img-top"
+                                    src="../img/Gokufigura.jfif"
+                                    alt="Una figura del Sayian Goku">
+                                    <br>
+                                    <br>
+                                    <p class="tx text-center">Una figura del Heroe de nuestra infancia Son Goku. Hecha con unos materiales ideales que aseguran resistencia y a su vez permiten una cantidad de detalles sin igual.</p>
+                                    <br>
+                                    <p class="al tx">USD 4999</p>
+                                    <br>
+                                </div>
+                                <div class="modal-footer al">
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-primary"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> Agregar al Carrito
+                                    </button>
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-light"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z" />
+                                        </svg> Lista de deseos
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="card">
                                 <img class="card-img-top" src="../img/Evafigura.jfif" 
@@ -284,11 +818,52 @@
                                         <spam class="badge bg-success"> Importado </spam>
                                         Una figura de Evangelion, especificamente del Eva-01. increiblemente costosa y aun asi vale su precio, ya que esta hecha de metal asi como de plastico de alta calidad. Imperdible.
                                     </p>
-                                    <spam class="fw-bold">USD $11999</spam>
-                                    <a href="#" class="btn btn-dark ms-3">Ver Mas</a>
+                                    <spam class="fw-bold">USD 11999</spam>
+                                    <button href="#" class="btn btn-dark ms-3" data-bs-target="#eva-modal"
+                                    data-bs-toggle="modal">Ver Mas</button>
                                 </div>
                             </div>
                         </div>
+                        <div class="modal fade" id="eva-modal" tabindex="-1" aria-labelledby="modal-title"
+                        aria-hidden="true">
+                        <div class="modal-dialog bg-login">
+                            <div class="modal-content bg-login" style="margin-top:30%;height:120%;">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="padding-left: 20%;padding-right: 20%;">
+                                    <br>
+                                    <h5 class="al tx">Eva-01</h5>
+                                    <img style="margin-left: 25%;margin-right: 25%;" class="card-img-top"
+                                    src="../img/Evafigura.jfif" 
+                                    alt="Una figura del Eva-01 de Sinji">
+                                    <br>
+                                    <br>
+                                    <p class="tx text-center">Una figura de Evangelion, especificamente del Eva-01. increiblemente costosa y aun asi vale su precio, ya que esta hecha de metal asi como de plastico de alta calidad. Imperdible.</p>
+                                    <br>
+                                    <p class="al tx">USD 11999</p>
+                                    <br>
+                                </div>
+                                <div class="modal-footer al">
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-primary"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> Agregar al Carrito
+                                    </button>
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-light"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z" />
+                                        </svg> Lista de deseos
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="card">
                                 <img class="card-img-top" src="../img/Obitofigura.jfif"
@@ -299,11 +874,52 @@
                                         <spam class="badge bg-success"> Importado </spam>
                                         El misterioso hombre enmascarado llega a nuestra tienda en forma de figura. Increibles detalles del personaje que porta el Kamui
                                     </p>
-                                    <spam class="fw-bold">USD $6999</spam>
-                                    <a href="#" class="btn btn-dark ms-3">Ver Mas</a>
+                                    <spam class="fw-bold">USD 6999</spam>
+                                    <button href="#" class="btn btn-dark ms-3" data-bs-target="#obito-modal"
+                                    data-bs-toggle="modal">Ver Mas</button>
                                 </div>
                             </div>
                         </div>
+                        <div class="modal fade" id="obito-modal" tabindex="-1" aria-labelledby="modal-title"
+                        aria-hidden="true">
+                        <div class="modal-dialog bg-login">
+                            <div class="modal-content bg-login" style="margin-top:30%;height:120%;">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="padding-left: 20%;padding-right: 20%;">
+                                    <br>
+                                    <h5 class="al tx">Obito</h5>
+                                    <img style="margin-left: 25%;margin-right: 25%;" class="card-img-top"
+                                    src="../img/Obitofigura.jfif"
+                                    alt="Una figura del Uchiha Obito">
+                                    <br>
+                                    <br>
+                                    <p class="tx text-center">El misterioso hombre enmascarado llega a nuestra tienda en forma de figura. Increibles detalles del personaje que porta el Kamui</p>
+                                    <br>
+                                    <p class="al tx">USD 6999</p>
+                                    <br>
+                                </div>
+                                <div class="modal-footer al">
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-primary"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> Agregar al Carrito
+                                    </button>
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-light"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z" />
+                                        </svg> Lista de deseos
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="card">
                                 <img class="card-img-top" src="../img/Zorofigura.jfif" 
@@ -312,13 +928,54 @@
                                     <h5 class="card-title fw-bold">Zoro</h5>
                                     <p class="card-text">
                                         <spam class="badge bg-success"> Importado </spam>
-                                        increible figura del comapaniero de Luffi, Zoro. con unos detalles sin igual y unos colores que te dejaran boquiabierto.
+                                        Increible figura del comapaniero de Luffi, Zoro. con unos detalles sin igual y unos colores que te dejaran boquiabierto.
                                     </p>
-                                    <spam class="fw-bold">USD $3999</spam>
-                                    <a href="#" class="btn btn-dark ms-3">Ver Mas</a>
+                                    <spam class="fw-bold">USD 3999</spam>
+                                    <button href="#" class="btn btn-dark ms-3" data-bs-target="#zoro-modal"
+                                    data-bs-toggle="modal">Ver Mas</button>
                                 </div>
                             </div>
                         </div>
+                        <div class="modal fade" id="zoro-modal" tabindex="-1" aria-labelledby="modal-title"
+                        aria-hidden="true">
+                        <div class="modal-dialog bg-login">
+                            <div class="modal-content bg-login" style="margin-top:30%;height:120%;">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="padding-left: 20%;padding-right: 20%;">
+                                    <br>
+                                    <h5 class="al tx">Zoro</h5>
+                                    <img style="margin-left: 25%;margin-right: 25%;" class="card-img-top"
+                                    src="../img/Zorofigura.jfif" 
+                                    alt="Una figura del espadachin y pirata Zoro">
+                                    <br>
+                                    <br>
+                                    <p class="tx text-center">Increible figura del comapaniero de Luffi, Zoro. con unos detalles sin igual y unos colores que te dejaran boquiabierto.</p>
+                                    <br>
+                                    <p class="al tx">USD 3999</p>
+                                    <br>
+                                </div>
+                                <div class="modal-footer al">
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-primary"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> Agregar al Carrito
+                                    </button>
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-light"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z" />
+                                        </svg> Lista de deseos
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                     <div class="row">
                         <h4>Otros</h4>
@@ -333,11 +990,52 @@
                                         <spam class="badge bg-success"> Nuevo </spam>
                                         Una Hacha de plastico de buena calidad inspirada en el arma de Thor, Ideal para los ninios.
                                     </p>
-                                    <spam class="fw-bold">USD $9</spam>
-                                    <a href="#" class="btn btn-dark ms-3">Ver Mas</a>
+                                    <spam class="fw-bold">USD 9</spam>
+                                    <button href="#" class="btn btn-dark ms-3" data-bs-target="#hacha-thor-modal"
+                                    data-bs-toggle="modal">Ver Mas</button>
                                 </div>
                             </div>
                         </div>
+                        <div class="modal fade" id="hacha-thor-modal" tabindex="-1" aria-labelledby="modal-title"
+                        aria-hidden="true">
+                        <div class="modal-dialog bg-login">
+                            <div class="modal-content bg-login" style="margin-top:30%;height:120%;">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="padding-left: 20%;padding-right: 20%;">
+                                    <br>
+                                    <h5 class="al tx">Hacha de Thor</h5>
+                                    <img style="margin-left: 25%;margin-right: 25%;" class="card-img-top"
+                                    src="../img/Hachajuguete.jfif"
+                                    alt="Una Hacha de juguete del Heroe Thor">
+                                    <br>
+                                    <br>
+                                    <p class="tx text-center">Una Hacha de plastico de buena calidad inspirada en el arma de Thor, Ideal para los ninios.</p>
+                                    <br>
+                                    <p class="al tx">USD 9</p>
+                                    <br>
+                                </div>
+                                <div class="modal-footer al">
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-primary"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> Agregar al Carrito
+                                    </button>
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-light"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z" />
+                                        </svg> Lista de deseos
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="card">
                                 <img class="card-img-top" src="../img/Cascojuguete.jfif" 
@@ -348,11 +1046,52 @@
                                         <spam class="badge bg-success"> Nuevo </spam>
                                         Un casco a escala real del Heroe Ironman.
                                     </p>
-                                    <spam class="fw-bold">USD $299</spam>
-                                    <a href="#" class="btn btn-dark ms-3">Ver Mas</a>
+                                    <spam class="fw-bold">USD 299</spam>
+                                    <button href="#" class="btn btn-dark ms-3" data-bs-target="#casco-ironman-modal"
+                                    data-bs-toggle="modal">Ver Mas</button>
                                 </div>
                             </div>
                         </div>
+                        <div class="modal fade" id="casco-ironman-modal" tabindex="-1" aria-labelledby="modal-title"
+                        aria-hidden="true">
+                        <div class="modal-dialog bg-login">
+                            <div class="modal-content bg-login" style="margin-top:30%;height:120%;">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="padding-left: 20%;padding-right: 20%;">
+                                    <br>
+                                    <h5 class="al tx">Casco de Ironman</h5>
+                                    <img style="margin-left: 25%;margin-right: 25%;" class="card-img-top"
+                                    src="../img/Cascojuguete.jfif" 
+                                    alt="Un casco a escala 1:1 de Ironman">
+                                    <br>
+                                    <br>
+                                    <p class="tx text-center">Un casco a escala real del Heroe Ironman.</p>
+                                    <br>
+                                    <p class="al tx">USD 299</p>
+                                    <br>
+                                </div>
+                                <div class="modal-footer al">
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-primary"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> Agregar al Carrito
+                                    </button>
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-light"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z" />
+                                        </svg> Lista de deseos
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="card">
                                 <img class="card-img-top" src="../img/Batmoviljuguete.jfif"
@@ -363,11 +1102,52 @@
                                         <spam class="badge bg-success"> Nuevo </spam>
                                         Una replica del Batmovil, el famoso vehiculo de Batman.
                                     </p>
-                                    <spam class="fw-bold">USD $299</spam>
-                                    <a href="#" class="btn btn-dark ms-3">Ver Mas</a>
+                                    <spam class="fw-bold">USD 299</spam>
+                                    <button href="#" class="btn btn-dark ms-3" data-bs-target="#batmovil-modal"
+                                    data-bs-toggle="modal">Ver Mas</button>
                                 </div>
                             </div>
                         </div>
+                        <div class="modal fade" id="batmovil-modal" tabindex="-1" aria-labelledby="modal-title"
+                        aria-hidden="true">
+                        <div class="modal-dialog bg-login">
+                            <div class="modal-content bg-login" style="margin-top:30%;height:120%;">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="padding-left: 20%;padding-right: 20%;">
+                                    <br>
+                                    <h5 class="al tx">Batmovil</h5>
+                                    <img style="margin-left: 25%;margin-right: 25%;" class="card-img-top"
+                                    src="../img/Batmoviljuguete.jfif"
+                                    alt="Juguete replica del Batmovil">
+                                    <br>
+                                    <br>
+                                    <p class="tx text-center">Una replica del Batmovil, el famoso vehiculo de Batman.</p>
+                                    <br>
+                                    <p class="al tx">USD 299</p>
+                                    <br>
+                                </div>
+                                <div class="modal-footer al">
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-primary"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> Agregar al Carrito
+                                    </button>
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-light"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z" />
+                                        </svg> Lista de deseos
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="card">
                                 <img class="card-img-top" src="../img/Spiderjuguete.jfif" alt="Unos brazaletes para tirar agua con la forma de Spiderman">
@@ -378,10 +1158,50 @@
                                         Brazaletes de Spiderman con la capacidad de tirar agua.
                                     </p>
                                     <spam class="fw-bold">USD $0</spam>
-                                    <a href="#" class="btn btn-dark ms-3">Ver Mas</a>
+                                    <button href="#" class="btn btn-dark ms-3" data-bs-target="#brazalete-spiderman-modal"
+                                    data-bs-toggle="modal">Ver Mas</button>
                                 </div>
                             </div>
                         </div>
+                        <div class="modal fade" id="brazalete-spiderman-modal" tabindex="-1" aria-labelledby="modal-title"
+                        aria-hidden="true">
+                        <div class="modal-dialog bg-login">
+                            <div class="modal-content bg-login" style="margin-top:30%;height:120%;">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="padding-left: 20%;padding-right: 20%;">
+                                    <br>
+                                    <h5 class="al tx">Brazaletes de Spiderman</h5>
+                                    <img style="margin-left: 25%;margin-right: 25%;" class="card-img-top"
+                                    src="../img/Spiderjuguete.jfif" alt="Unos brazaletes para tirar agua con la forma de Spiderman">
+                                    <br>
+                                    <br>
+                                    <p class="tx text-center">Brazaletes de Spiderman con la capacidad de tirar agua.</p>
+                                    <br>
+                                    <p class="al tx">USD 0</p>
+                                    <br>
+                                </div>
+                                <div class="modal-footer al">
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-primary"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg> Agregar al Carrito
+                                    </button>
+                                    <button style="margin-right: 2%;" type="button" class="btn btn-light"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z" />
+                                        </svg> Lista de deseos
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -431,6 +1251,9 @@
                                     aria-label="linkedin" target="_blank">
                                     <i class="fab fa-linkedin">&nbsp;</i>
                                 </a>
+                            </div>
+                            <div class="quienesSomos" style="margin-top: 5%;">
+                                <a href="quienesSomos.html"type="button" style="width: 70%;" class="btn btn-outline-info">Quienes somos?</a>
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-4 mx-auto text-lg-start text-md-center mb-4">

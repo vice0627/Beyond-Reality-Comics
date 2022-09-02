@@ -9,9 +9,21 @@ body {
   color: white;
   background-color: rgb(17, 17, 17);
 }
+.cardCarrito{
+  margin-top: 5%;
+  color: white;
+  background-color: rgb(17, 17, 17);
+}
 .bg-black{
   background-color: #191919;
 
+}
+.bg-login{
+  color: #7b868f;
+  background-color: #191919;
+}
+.primary{
+  color: #0d7eff;
 }
 .card-img-top{
     align-self: center;
@@ -20,7 +32,7 @@ body {
     width: 50%;
 }
 .border-top{
-  margin-top: 1%;
+  margin-top: 2px;
 }
 #searchBar{
   max-width: none;
@@ -30,12 +42,28 @@ body {
   max-width: none;
   min-width: 30%;
 }
+.r{
+  border-radius: 1000%;
+}
 .al{
+  display: flex;
+  justify-content: center;
+}
+.jc{
+  margin-top: 5%;
   display: flex;
   justify-content: center;
 }
 .tx{
   color: white;
+}
+.vencimiento{
+  height: 3.9vh;
+  padding: 2% 10%;
+    border: none;
+
+    cursor: pointer;
+    box-shadow: 1px 1px 30px -12px #000000;
 }
 body::-webkit-scrollbar {
     width: 0.35vw;
@@ -45,3 +73,4 @@ body::-webkit-scrollbar {
     background: rgb(8, 93, 47);
     border-radius: 0.5vw;
   }
+  
